@@ -1,0 +1,11 @@
+config:
+  target: "http://localhost:3000" # Cambia esto a la URL de tu API
+  phases:
+    - duration: 5 # Duración de la prueba en segundos
+      arrivalRate: 10 # Número de nuevos usuarios por segundo
+
+scenarios:
+  - flow:
+    - get:
+        url: "/productos" # Cambia esto por el endpoint que quieras probar
+
